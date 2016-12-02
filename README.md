@@ -17,9 +17,16 @@ sudo ln -s ~/cs241_assembly/as_src/as88 /usr/bin/as88
 
 *If you do not clone this into ~/ (your home directory), then replace the path of ~/cs241_assembly/... appropriately during the symbolic linking step. Furthermore, you can always go ahead and delete the symlinks using the following command ```sudo rm /usr/bin/as88``` (if you want to delete the symbolic link to the as88 program)*
 
+Now, should be able to assembly using "as88" and execute using "s88" (without the need to copy over the programs to the directory you want to use it in)
 
+To test:
+```
+cd HD/as88
+as88 hello
+s88 hello
+```
 
-
+*You might get some type of error, but just see if your code runs or not.*
 
 ##StoDevX Directions
 Intel-based Linux version
