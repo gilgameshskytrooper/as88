@@ -1,5 +1,27 @@
 # Installing and Getting Started with the 8088 Assembler And Tracer Toolkit (v. 1.0)
+##Andrew Lee Instructions
+*These instructions are my own. However, if you prefer to use the original instructions that were created by Hawken Rives, go to StoDevX Directions at the below*
 
+The following commands will download the source files for as88, s88, and t88, build them manually for Mac or Linux.
+Furthermore, it will create symbolic links via the "sudo ln -s" commands to ensure you can use as88, s88, and t88 without having to copy them in the same directory you saved your source files.
+
+```
+cd ~/
+git clone https://github.com/gilgameshskytrooper/as88.git cs241_assembly
+cd cs241_assembly
+bash asinstall.sh
+sudo ln -s ~/cs241_assembly/trce_src/s88 /usr/bin/s88
+sudo ln -s ~/cs241_assembly/trce_src/t88 /usr/bin/t88
+sudo ln -s ~/cs241_assembly/as_src/as88 /usr/bin/as88
+```
+
+*If you do not clone this into ~/ (your home directory), then replace the path of ~/cs241_assembly/... appropriately during the symbolic linking step. Furthermore, you can always go ahead and delete the symlinks using the following command ```sudo rm /usr/bin/as88``` (if you want to delete the symbolic link to the as88 program)*
+
+
+
+
+
+##StoDevX Directions
 Intel-based Linux version
 
 NOTE: If at any point while installing the software supplied on this CD, you are presented with an error message that states you do not have the correct privileges or permissions to install the software, you will need to log off and then log on as the Administrator (or as another user with administrative permissions). If you are installing this software at a company, educational institution, or other organizational site, you may need to ask your system administrator for assistance or for an appropriate password.
